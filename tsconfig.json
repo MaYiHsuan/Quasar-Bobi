@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "allowJs": true, // 允許 JavaScript 文件
+    "checkJs": true, // 檢查 JavaScript 文件中的錯誤
+    "jsx": "preserve", // 保留 JSX，適用於 Vue
+    "target": "ESNext", // 使用 ESNext 作為編譯目標
+    "module": "ESNext", // 使用 ESNext 模塊系統
+    "moduleResolution": "Bundler", // 使用 Bundler 模塊解析策略
+    "allowImportingTsExtensions": true, // 允許導入 TS 擴展名
+    "noEmit": true, // 不生成輸出文件
+    "types": ["vue", "vue-router"], // 加入 vue 和 vue-router 的型別
+    "esModuleInterop": true, // 兼容 CommonJS 模塊
+    "forceConsistentCasingInFileNames": true, // 確保導入的大小寫一致
+    "skipLibCheck": true, // 跳過庫檔案的檢查以加快編譯速度
+    "baseUrl": ".", // 設定基準路徑
+    "paths": {
+      "@/*": ["src/*"] // 支持 @ 符號作為 src 目錄的別名
+    }
+  },
+  "vueCompilerOptions": {
+    "target": 3.5 // Vue 的目標版本
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "src/**/*.js"
+  ], // 包含的檔案
+  "exclude": ["node_modules"] // 排除 node_modules
+}
